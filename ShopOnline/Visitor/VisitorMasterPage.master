@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="VisitorMasterPage.master.cs" Inherits="Visitor_VisitorMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<title>不知书店</title>
+	<link href="css/mall_style.css" rel="stylesheet" />
+	<script src="js/move_wanmei.js"></script>
+	<script src="js/mall_style.js"></script>
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+
+<body>
+ <form runat="server">
+	<div id="header">
+		<div style="width:100%;height:31px;background:#F0F0F0;border-bottom:1px solid #CCC;">
+			<div class="header_top">
+				<ul class="header_top_login">
+				  <li style="color:#f00;">欢迎来到不知书店</li>
+                 
+                    <asp:LinkButton ID="lblogin" runat="server" onclick="lblogin_Click">[登录]</asp:LinkButton>
+                    
+                    <asp:LinkButton ID="lbregister" runat="server" onclick="lbregister_Click">[注册]</asp:LinkButton>
+
+				</ul>
+				<ul class="header_top_menu">
+				<asp:HyperLink runat="server" NavigateUrl="~/Manage/login.aspx">管理员入口</asp:HyperLink>	
+				</ul>
+			</div>
+		</div>
+		<div class="header_center">
+			<div class="header_center_logo">
+				<a href="Index.aspx"><img src="TuPian/logo.jpg" /></a>
+			</div>
+           
+			<div class="shopping_cartt">
+         
+					<span style="cursor:pointer;" class="shopping_cart_t">
+                        
+                      <a href="ShopCart.ashx">购物车</a> 
+                     </span>
+                      
+                   <span class="shopping_cart_n">
+                    <asp:LinkButton ID="lbshopcart" runat="server" onclick="lbshopcart_Click">
+                        <asp:Label  ID="labcount" runat="server" Text="0"></asp:Label> 
+				    </asp:LinkButton>
+                   </span> 
+					
+			</div>
+            
+			<div class="header_center_search">
+				<div class="search_t">
+					<div class="src_input">
+						<input type="hidden" id="searchOption" value="goods" />
+
+                        <asp:TextBox ID="tbsearch" runat="server" CssClass="sinput" placeholder="请输入书名" Width="100%"></asp:TextBox>
+						
+					</div>
+
+                    <asp:LinkButton ID="lbsearch" runat="server" onclick="lbsearch_Click">
+					<input id="searchBtn" type="button" class="sbutton" value="搜 索">
+                    </asp:LinkButton>
+				</div>
+				<div style="clear:both;"></div>
+				<div class="select_b">
+					<span>热门搜索：</span>
+					<asp:LinkButton ID="lb1" runat="server" 
+                        CommandArgument="围城" oncommand="lb1_Command">围城</asp:LinkButton>
+					<asp:LinkButton ID="LinkButton1" runat="server" oncommand="lb1_Command"  CommandArgument="百年孤独">百年孤独</asp:LinkButton>
+					<asp:LinkButton ID="LinkButton2" runat="server" oncommand="lb1_Command" CommandArgument="Java网络编程">Java网络编程</asp:LinkButton>
+				<asp:LinkButton ID="LinkButton3" runat="server" oncommand="lb1_Command" CommandArgument="理想国">理想国</asp:LinkButton>
+				<asp:LinkButton ID="LinkButton4" runat="server" oncommand="lb1_Command" CommandArgument="资本论">资本论</asp:LinkButton>
+				</div>
+			</div>	
+		</div>
+		<div style="clear:both;"></div>
+		<div class="header_bottom">
+			<ul>
+				<li><a href="Index.aspx">首 页</a></li>
+				<li><a href="Classify.aspx?type=1&sign=common">儿童书籍</a></li>
+				<li><a href="Classify.aspx?type=2&sign=common">教辅资料</a></li>
+				<li><a href="Classify.aspx?type=3&sign=common">文学名著</a></li>
+				<li><a href="Classify.aspx?type=4&sign=common">当代小说</a></li>
+			</ul>
+		</div>
+	</div>
+	<asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+    
+    
+    </asp:ContentPlaceHolder>
+	<div id="footer">
+		<div class="footer_about">
+			<ul>
+				<li style="border:0;"><a href="#">关于我们</a></li>
+				<li><a href="#">法律声明</a></li>
+				<li><a href="#">使用协议</a></li>
+				<li><a href="#">版权隐私</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">成功案例</a></li>
+				<li><a href="#">网站地图</a></li>
+			</ul>
+		</div>
+		<div class="footer_text">
+            	冀ICP备00000000号-1 | Powered by Amudu 1.0 | 服务热线：400-888-8888
+				<br />
+				©2014-2024 Cnhnb B2B SYSTEM All Rights Reserved
+		</div>
+	</div>
+   </form>
+	<!-- 回到顶部、反馈建议 -->
+	<div id="amd-gotop">
+	<a class="gettop" href="javascript:;"></a>
+	<a class="report" href="javascript:;"></a>
+	</div>
+</body>
+</html>

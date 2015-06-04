@@ -1,0 +1,163 @@
+/* CSS Document */
+/* 全局样式 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, textarea, p, th, td, i, b {
+	margin:0;
+	padding:0;
+}
+img {
+	border:0px;
+}
+ol,ul {
+	list-style:none;
+}
+a {
+	text-decoration:none;
+}
+a:link, a:visited, a:active {
+	color: black;
+}
+a:hover {
+	color:red;
+	text-decoration:underline;
+}
+body, button, input, select, textarea {
+	font-size:12px;
+	line-height:1.5;
+}
+
+/* 头部样式 */
+.header {
+	width:100%;
+	height:100px;
+	padding:10px 0;
+	border-bottom:4px solid #f00;
+}
+.header-logo {
+	width:1080px;
+	height:100px;
+	margin:0 auto;
+}
+/* 主体内容样式 */
+.content {
+	margin:0 auto;
+	width:975px;
+	height:495px;
+	padding-bottom:35px;
+}
+.content-l {
+	width:398px;
+	height:410px;
+	margin:50px auto;
+	background:#f60;
+	color:#FFF;
+	border:1px solid #f00;
+}
+.l-text {
+	width:338px;
+	height:360px;
+	margin:25px 30px;
+}
+.l-text h3 {
+	height:32px;
+	line-height:32px;
+}
+.l-form {
+	border-top:1px solid #f00;
+	font-size:14px;
+	height:300px;
+	padding-top:18px;
+}
+.l-form form li {
+	margin:18px 0;
+	height:30px;
+	list-style:none;
+}
+.l-form form li span {
+	width:80px;
+	height:30px;
+	display:block;
+	line-height:30px;
+	text-align:right;
+	float:left;
+}
+.l-form form li input {
+	width:200px;
+	height:28px;
+	display:block;
+	line-height:26px;
+	float:left;
+}
+.validateShow {
+	border:1px solid black;
+	font-size:18px;
+	background:#f00;
+	width:80px;
+	height:30px;
+	float:left;
+}
+.validateShow:hover {
+	cursor:pointer;
+}
+.validateShow b {
+	float:left;
+	width:8px;
+	margin:0 5px;
+}
+#form_xieyi {
+	text-align:center;
+	font-size:12px;
+	height:22px;
+	line-height:22px;
+}
+#form_xieyi input {
+	width:14px;
+	height:14px;
+	margin-right:4px;
+}
+.form_btn {
+	height:35px;
+	margin-top:15px;
+	text-align:center;
+}
+.form_btn button {
+	background:#00F;
+	border:0;
+	height:35px;
+	width:240px;
+	font-size:14px;
+	color:#FFF;
+	font-weight:bold;
+	cursor:pointer;
+	text-align:center;
+}
+.form_tishi {
+	margin-left:4px;
+	height:30px;
+	line-height:30px;
+	color:#fff;
+}
+.content-r {
+	float:left;
+}
+
+/*底部样式*/
+#footer {
+	width:1080px;
+	margin:30px auto 0 auto;
+	border-top:1px solid #f00;
+	padding-top:10px;
+}
+.footer_about {
+	text-align:center;
+	padding:4px 0 4px 0;
+}
+.footer_about ul li {
+	display:inline-table;
+	width:60px;
+	border-left:1px solid black;
+}
+.footer_text {
+	text-align:center;
+	padding:4px 0 4px 0;
+	line-height:24px;
+}

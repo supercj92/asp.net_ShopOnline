@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserCenter.master.cs" Inherits="Visitor_UserCenter" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>用户中心</title>
+    <link href="css/user-gouwucar.css" rel="stylesheet" />
+   <link href="css/mall_style.css" rel="stylesheet" />
+	<script src="js/user-gouwucar.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+	<div class="header">
+		<div style="width:1080px;height:100px;margin:0 auto;">
+			<div class="header-logo"><a href="Index.aspx"><img src="TuPian/logo.jpg" /></a></div>
+			<div class="header-att"><img src="TuPian/mycct.gif" /></div>
+			<div class="header-right">
+				<p>客服热线：<span>18330386863</span></p>
+			</div>
+		</div>
+        
+        
+	</div>
+	<div class="content">
+        <div class="header_bottom">
+			<ul>
+				<li><a href="Index.aspx">首 页</a></li>
+				<li><a href="Classify.aspx?type=1&sign=common">儿童书籍</a></li>
+				<li><a href="Classify.aspx?type=2&sign=common">教辅资料</a></li>
+				<li><a href="Classify.aspx?type=3&sign=common">文学名著</a></li>
+				<li><a href="Classify.aspx?type=4&sign=common">当代小说</a></li>
+			</ul>
+		</div>
+		<div class="content-left">
+			<div class="left-t">
+				<div class="left-t-text">用户中心</div>
+				<span>[退出]</span>
+			</div>
+			<div class="left-b">
+				<ul>
+					<a href="UserHomePage.aspx"><li>用户首页</li></a>
+					
+					<a href="UserHistory.aspx"><li>历史订单</li></a>
+					<a href="ShopCart.aspx"><li>我的购物车</li></a>
+                    <a href="Logout.ashx"><li>注销登陆</li></a>
+					
+					
+				</ul>
+			</div>
+		</div>
+		<div class="content-center">
+	    <div class="Kuang">
+            <div class="GeRen">
+                <asp:Label ID="lbinfo" runat="server" Text=""></asp:Label>
+            </div>
+               </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+     
+        </asp:ContentPlaceHolder>
+ 
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+    <div style="clear:both;">
+    </div>
+	<div id="footer">
+		<div class="footer_about">
+			<ul>
+				<li style="border:0;"><a href="#">关于我们</a></li>
+				<li><a href="#">法律声明</a></li>
+				<li><a href="#">使用协议</a></li>
+				<li><a href="#">版权隐私</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">成功案例</a></li>
+				<li><a href="#">网站地图</a></li>
+			</ul>
+		</div>
+		<div class="footer_text">
+            	冀ICP备00000000号-1 | Powered by Amudu 1.0 | 服务热线：400-888-8888
+				<br />
+				©2014-2024 Cnhnb B2B SYSTEM All Rights Reserved
+		</div>
+	</div>
+
+    </form>
+</body>
+</html>

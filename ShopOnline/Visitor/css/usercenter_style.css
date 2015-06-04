@@ -1,0 +1,282 @@
+/* CSS Document */
+/* 全局样式 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, textarea, p, th, td, i, b {
+	margin:0;
+	padding:0;
+}
+img {
+	border:0px;
+}
+ol,ul {
+	list-style:none;
+}
+a {
+	text-decoration:none;
+}
+a:link, a:visited, a:active {
+	color: black;
+}
+a:hover {
+	color:red;
+	text-decoration:underline;
+}
+body, button, input, select, textarea {
+	font-size:13px;
+	line-height:1.5;
+}
+
+/* 头部样式 */
+.header {
+	width:100%;
+	height:100px;
+	padding:10px 0;
+	border-bottom:4px solid #f00;
+}
+.header-logo {
+	width:200px;
+	height:100px;
+	float:left;
+}
+.header-att {
+	height:80px;
+	width:580px;
+	float:left;
+	margin:10px 0;
+	margin-left:20px;
+}
+.header-right {
+	width:280px;
+	height:80px;
+	float:left;
+	padding:10px 0;
+}
+.header-right p {
+	font-size:18px;
+	text-align:right;
+	font-weight:bold;
+	margin-top:3px;
+}
+.header-right p span {
+	color:red;
+}
+.right-inp {
+	height:30px;
+	width:260px;
+	border:1px solid #F00;
+	margin-left:18px;
+	margin-top:10px;
+}
+.s_text {
+	width:200px;
+	height:30px;
+	border:0;
+	float:left;
+}
+.s_btn {
+	width:60px;
+	height:30px;
+	border:0;
+	float:left;
+	background:#F00;
+	color:#FFF;
+	cursor:pointer;
+}
+
+/* 主体内容样式 */
+.content {
+	width:1080px;
+	margin:0 auto;
+	margin-top:20px;
+	margin-bottom:40px;
+}
+.content-left {
+	width:160px;
+	height:372px;
+	float:left;
+	border:1px solid #f00;
+	margin-right:17px;
+}
+.left-t {
+	height:33px;
+	background:#f00;
+	line-height:33px;	
+}
+.left-t-text {
+	width:110px;
+	height:33px;
+	text-indent:10px;
+	float:left;
+	font-weight:bold;
+	font-size:16px;
+	color:#fff;
+}
+.left-t span {
+	float:left;
+	cursor:pointer;
+	font-size:14px;
+	color:#F00;
+}
+.left-t span:hover {
+	color:red;
+}
+.left-b ul {
+	width:130px;
+	margin:15px;
+}
+.left-b ul li {
+	width:130px;
+	height:26px;
+	line-height:26px;
+	cursor:pointer;
+	margin-left:5px;
+}
+.left-b ul li:hover {
+	color:#f40;
+}
+.content-center {
+	float:left;
+	width:650px;
+	border:1px solid #f00;
+	margin-right:17px;
+}
+.user_show {
+	margin:15px;
+}
+/* 用户首页 */
+.shouye_t {
+	width:618px;
+	height:164px;
+	margin-bottom:20px;
+}
+.user_img {
+	width:75px;
+	height:95px;
+	margin-right:26px;
+	float:left;
+	border:1px solid #F00;
+}
+.shouye_att {
+	width:515px;
+	height:97px;
+	float:left;
+	font-size:14px;
+}
+.att-t {
+	height:38px;
+	line-height:38px;
+}
+.att-b {
+	height:31px;
+	line-height:31px;
+	width:480px;
+	border:1px solid #f00;
+
+}
+.arr_b {
+	margin-left:35px;
+}
+.arr_b a {
+	margin-left:12px;
+	font-size:12px;
+	color:blue;
+}
+.att-b-text {
+	color:red;
+	font-weight:bold;
+	margin-right:8px;
+	font-size:16px;
+}
+.user-dai {
+	width:582px;
+	height:50px;
+	border:1px solid #f00;
+	margin-top:15px;
+}
+.user-dai ul li {
+	display:inline-table;
+	flaot:left;
+	width:110px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+}
+.user-dai ul li span {
+	margin-left:5px;
+	color:red;
+	font-weight:bold;
+}
+.shouye_b {
+	width:618px;
+	margin-bottom:25px;
+}
+.b_top {
+	width:618px;
+	height:40px;
+	line-height:40px;
+	text-indent:8px;
+	font-size:18px;
+	font-weight:bold;
+	background:#a0cdeb;
+	color:#FFF;
+}
+.shouye_b ul li {
+	border:1px solid #f00;
+	float:left;
+}
+.shouye_b ul li:hover {
+	border:1px solid #F00;
+}
+
+
+.content-right {
+	height:474px;
+	float:left;
+	width:230px;
+}
+.r_dongtai {
+	height:200px;
+	width:228px;
+	border:1px solid #f00;
+	margin-bottom:20px;
+}
+.r_dongtai ul {
+	width:204px;
+	height:143px;
+	margin:12px;
+}
+.r_dongtai ul li {
+	height:23px;
+	line-height:23px;
+	list-style:inside;
+}
+.dongtai_text {
+	height:33px;
+	text-indent:10px;
+	font-weight:bold;
+	font-size:16px;
+	background:#e7e7e7;
+	line-height:33px;
+}
+
+
+/*底部样式*/
+#footer {
+	width:1080px;
+	margin:30px auto 0 auto;
+	border-top:1px solid #f00;
+	padding-top:10px;
+}
+.footer_about {
+	text-align:center;
+	padding:4px 0 4px 0;
+}
+.footer_about ul li {
+	display:inline-table;
+	width:60px;
+	border-left:1px solid black;
+}
+.footer_text {
+	text-align:center;
+	padding:4px 0 4px 0;
+	line-height:24px;
+}
